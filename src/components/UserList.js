@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import User from './User';
 import loadingIndicator from '../images/loader.gif';
+import User from './User';
 import './UserList.css';
 
 export default function UserList() {
@@ -42,6 +42,7 @@ export default function UserList() {
 				<label>
 					<span>Users to load: </span>
 					<input
+						className="user-count-input"
 						type="number"
 						value={numberToLoad}
 						onChange={onNumberToLoadChange}
