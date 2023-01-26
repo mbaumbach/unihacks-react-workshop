@@ -2,9 +2,13 @@
 
 ## Getting started
 
-The best way to get started is to use something like [Create React App (CRA)](https://create-react-app.dev/). That will give you a bootstrapped project to start working in without having to understand how everything works under the covers. You might want to use a library like [Material UI](https://material-ui.com/) to give you some components that give you a lot of functionality.
+You will need to start by making sure you have [Node/NPM](https://nodejs.org/en/) installed.
+
+The best way to get started is to use something like [Vite](https://vitejs.dev/guide/) or [Create React App (CRA)](https://create-react-app.dev/). That will give you a bootstrapped project to start working in without having to understand how everything works under the covers. You might want to use a library like [Mantine UI](https://ui.mantine.dev/) or [Material UI](https://material-ui.com/) to give you some components that give you a lot of functionality.
 
 I also recommend using [VSCode](https://code.visualstudio.com/) as your editor. It has a ton of built-in capabilities to work well with React projects.
+
+To start this project, from your terminal go to the top-level folder of this project and run `npm run start`.
 
 ## HTML vs React (JSX)
 
@@ -45,7 +49,9 @@ Another property that acts a little different is the `style` attribute. Normally
 In React/JSX, you need to use a JavaScript object and use "camel case" for the CSS property names:
 
 ```jsx
-<div style={{ fontSize: '14px', fontWeight: 'bold' }}>Hello</div>
+<div style={{ fontSize: '14px', fontWeight: 'bold' }}>
+	Hello
+</div>
 ```
 
 or

@@ -33,7 +33,7 @@ export default function UserList() {
 
 	function onNumberToLoadChange(event) {
 		const currentValue = event.currentTarget.value;
-		setNumberToLoad(Math.max(1, currentValue));
+		setNumberToLoad(currentValue);
 	}
 
 	return (
@@ -51,7 +51,8 @@ export default function UserList() {
 				</label>
 				{loading && (
 					<div className="loading">
-						Loading... <img src={loadingIndicator} alt="Loading" />
+						Loading...{' '}
+						<img src={loadingIndicator} alt="Loading" />
 					</div>
 				)}
 			</div>

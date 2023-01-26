@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
 export default function Counter({ label }) {
-	const [counter, setCounter] = useState(0);
+	const [count, setCount] = useState(0);
 
 	function decrement() {
-		setCounter(counter - 1);
+		setCount(count - 1);
 	}
 
 	function increment() {
-		setCounter(counter + 1);
+		setCount(count + 1);
 	}
 
 	return (
@@ -18,7 +18,7 @@ export default function Counter({ label }) {
 				<button type="button" onClick={decrement}>
 					-
 				</button>
-				{counter}
+				{count}
 				<button type="button" onClick={increment}>
 					+
 				</button>

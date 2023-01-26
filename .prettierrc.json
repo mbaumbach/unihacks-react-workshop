@@ -4,7 +4,7 @@
 	"singleQuote": true,
 	"jsxBracketSameLine": true,
 	"arrowParens": "avoid",
-	"printWidth": 80,
+	"printWidth": 60,
 	"overrides": [
 		{
 			"files": ["*.yml", "*.yaml"],
