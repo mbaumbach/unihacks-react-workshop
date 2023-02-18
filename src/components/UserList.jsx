@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import loadingIndicator from '../images/loader.gif';
+import { fetchUsers } from '../lib/fetch-users';
 import User from './User';
 import './UserList.css';
 
@@ -9,26 +10,14 @@ export default function UserList() {
 	const [numberToLoad, setNumberToLoad] = useState(1);
 
 	useEffect(() => {
-		async function fetchUsers() {
+		async function getUsers() {
 			setLoading(true);
-			const fetched = await fetch(
-				`https://randomuser.me/api/?results=${numberToLoad}`
-			);
-			const fetchedUsers = await fetched.json();
-			const mappedUsers = fetchedUsers.results.map(user => {
-				return {
-					id: user.login.uuid,
-					first: user.name.first,
-					last: user.name.last,
-					picture: user.picture.thumbnail,
-					email: user.email
-				};
-			});
-			setUsers(mappedUsers);
+			const fetchedUsers = await fetchUsers(numberToLoad);
+			setUsers(fetchedUsers);
 			setLoading(false);
 		}
 
-		fetchUsers();
+		getUsers();
 	}, [numberToLoad]);
 
 	function onNumberToLoadChange(event) {

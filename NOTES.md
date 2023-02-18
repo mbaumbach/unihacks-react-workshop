@@ -4,11 +4,11 @@
 
 You will need to start by making sure you have [Node/NPM](https://nodejs.org/en/) installed.
 
-The best way to get started is to use something like [Vite](https://vitejs.dev/guide/) or [Create React App (CRA)](https://create-react-app.dev/). That will give you a bootstrapped project to start working in without having to understand how everything works under the covers. You might want to use a library like [Mantine UI](https://ui.mantine.dev/) or [Material UI](https://material-ui.com/) to give you some components that give you a lot of functionality.
+The best way to get started is to use something like [NextJS](https://nextjs.org/), [Vite](https://vitejs.dev/guide/), or [Create React App (CRA)](https://create-react-app.dev/). That will give you a bootstrapped project to start working in without having to understand how everything works under the covers. You might want to use a library like [Mantine UI](https://ui.mantine.dev/) or [Material UI](https://material-ui.com/) to give you some components that give you a lot of functionality.
 
-I also recommend using [VSCode](https://code.visualstudio.com/) as your editor. It has a ton of built-in capabilities to work well with React projects.
+I also recommend using [Visual Studio Code](https://code.visualstudio.com/) as your editor. It has a ton of built-in capabilities to work well with React projects.
 
-To start this project, from your terminal go to the top-level folder of this project and run `npm run start`.
+To start this project, from your terminal go to the top-level folder of this project and run `npm install` and then run `npm start`.
 
 ## HTML vs React (JSX)
 
@@ -20,7 +20,7 @@ const myVar = 'Marc';
 return <SomeComponent name={myVar}>...</SomeComponent>;
 ```
 
-There are a few special attributes that aren't a one-to-one match. The most notable is probably the `class` attribute on HTML elements. That's typically used when assigned a class selector from CSS to the HTML element. The same can be done with React by using the `className` property:
+There are a few special attributes that aren't a one-to-one match. The most notable is probably the `class` attribute on HTML elements. That's typically used when assigning a class selector from CSS to the HTML element. The same can be done with React by using the `className` property:
 
 ```css
 .my-cool-css-class {
@@ -74,7 +74,7 @@ For CSS, add this to the top of a component file:
 import './Filename.css';
 ```
 
-Alternatively, a package like _styled-components_ is great.
+Alternatively, a package like [styled-components](https://styled-components.com/) is great.
 
 For images:
 
@@ -86,4 +86,4 @@ The `myImage` variable can be used in the `src` attribute of an `img` tag.
 
 ## Additional reading
 
-For more information, take a look at the [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html) and [Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html) for more detailed information about how React works.
+For more information, take a look at the [Tutorial: Intro to React](https://beta.reactjs.org/learn) for more detailed information about how React works.
